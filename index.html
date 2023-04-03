@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Social marketplace infrastructure for Polkadot">
+    <link rel="stylesheet" href="style.css" defer>
+    <title>Componentes</title>
+</head>
+<body>
+    <main>
+    <!-- NAVBAR -->
+    <navbar-virto>
+        <span slot="logo">Virto team</span>
+
+        <span slot="left">Virto team</span>
+        <span slot="center">Developing</span>
+        <span slot="right">Follow us</span>
+
+        <!-- HIDDEN NAVBAR -->
+        <span slot="menu">
+            <ul>
+                <li>Hola</li>
+                <li>Como</li>
+                <li>Estas</li>
+            </ul>
+        </span>
+    </navbar-virto>
+    <!-- BUTTONS SECTION -->
+    <section class="buttons">
+        <button-virto label="Light Button" theme="light"></button-virto>
+        <button-virto label="Dark Button" theme="dark"></button-virto>
+    </section>
+    <!-- PROGRESS BAR SECTION -->
+    <section class="progress-bar">
+    <h1>Custom progress bar</h1>
+    <p>Insert one number from 0 to 100 and press enter to change the progress.</p>
+        <virto-input id="virto-input"></virto-input>
+        <progress-bar percent=""></progress-bar>
+    </section>
+    <!-- FOOTER -->
+    </main>
+    <script src="./Navbar.js" defer></script>
+    <script src="./Button.js" defer></script>
+    <script src="./ProgressBar.js"></script>
+    <script src="./Input.js"></script>
+</body>
+</html>

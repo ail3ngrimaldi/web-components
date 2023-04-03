@@ -1,0 +1,63 @@
+/*ESTILOS GENERALES*/
+
+:root {
+    --color-accent-rgb: 72, 61, 139;
+    --color-accent: rgb(var(--color-accent-rgb));
+    --color-alt-rgb: 212, 173, 207;
+    --color-alt: rgb(var(--color-alt-rgb));
+    --color-bg: white;
+    --color-bg-alt: whitesmoke;
+    --color-text: #224;
+    --color-text-alt: #446;
+    --nav-height: calc(3rem + 2vh);
+    --max-width: 1100px;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background: var(--color-bg); 
+    font-family: sans-serif; 
+    color: var(--color-text); 
+    overflow: hidden;
+}
+
+/*MAIN*/
+main {
+    display: block;
+}
+
+/* MAIN STYLES FOR SECTIONS */
+.buttons, .progress-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: rgb(204, 235, 204);
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-text-alt);
+}
+
+/* 
+span {
+    padding: 10px;
+} */
+
+/*PROGRESS BAR SECTION*/
+.progress-bar {
+    align-items: center;
+    flex-direction: column;
+    gap: 1.75rem;
+    padding: 1.5rem 0;
+}
